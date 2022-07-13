@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "parcel": "latest",
-    "vue": "latest",
     "@parcel/transformer-sass": "latest",
     "@parcel/transformer-vue": "latest"
   }
