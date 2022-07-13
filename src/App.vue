@@ -8,6 +8,6 @@
       return {
         name: "Vue",
       };
-    },
+    }
   };
 </script>
