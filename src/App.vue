@@ -1,5 +1,5 @@
 <template>
-  <div>Hello {{ name }}!</div>
+  <div>Hello {{ name }} in {{ env }}!</div>
 </template>
 
 <script>
@@ -7,6 +7,7 @@
     data() {
       return {
         name: "Vue",
+        env: process.env.NODE_ENV
       };
     }
   };
