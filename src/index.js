@@ -2,7 +2,7 @@ import {createApp} from "vue";
 import App from "./App.vue";
 
 const app = createApp(App);
-const app2 = app.mount("#app");
+const app2 = app.mount("main#app");
 
 
 console.log('app', app);
