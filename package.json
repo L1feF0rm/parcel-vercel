@@ -1,5 +1,5 @@
 {
-  "name": "parcel-app",
+  "name": "@kamen/parcel-vercel",
   "private": true,
   "source": "src/index.html",
   "scripts": {
