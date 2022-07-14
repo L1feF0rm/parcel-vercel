@@ -1,9 +1,10 @@
 {
   "name": "@kamen/parcel-vercel",
+  "version": "0.1.0",
   "private": true,
   "source": "src/index.html",
   "scripts": {
-    "build": "NODE_ENV=development parcel build",
+    "build": "NODE_ENV=development npm run production",
     "development": "parcel",
     "production": "parcel build"
   },
