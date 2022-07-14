@@ -3,7 +3,7 @@
   "private": true,
   "source": "src/index.html",
   "scripts": {
-    "build": "npm run development",
+    "build": "NODE_ENV=development parcel build",
     "development": "parcel",
     "production": "parcel build"
   },
