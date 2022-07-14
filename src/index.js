@@ -8,13 +8,18 @@ const app = createApp(App)
         history: createWebHashHistory(),
         routes: [{
             path: '/user/:id(\\d+)?',
-            component: {}
+            component: {
+                template: '<span>{{ $route.params.id }}</span>'
+            }
         }, {
             path: '/(.*)',
-            component: {}
+            component: {
+                template: '<span>default catch all route</span>'
+            }
         }]
     }))
     .use(createStore({
+        strict: process.env.NODE_ENV !== 'production',
         modules: {
             root: {
                 namespaced: true,
