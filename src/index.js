@@ -31,6 +31,9 @@ export const app = createApp(Main)
             }
         }
     }));
+
+app.config.devtools = true;
+
 const main = app.mount("main#app");
 
 console.log('app', app);
