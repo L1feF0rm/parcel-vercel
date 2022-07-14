@@ -6,12 +6,24 @@ import App from "./App.vue";
 const app = createApp(App)
     .use(createRouter({
         history: createWebHashHistory(),
-        routes: []
+        routes: [{
+            path: '/user/:id(\\d+)?',
+            component: {}
+        }, {
+            path: '/(.*)',
+            component: {}
+        }]
     }))
     .use(createStore({
-        namespaced: true,
-        state: {
-            hello: 'world'
+        modules: {
+            root: {
+                namespaced: true,
+                state() {
+                    return {
+                        hello: 'world'
+                    }                    
+                }       
+            }
         }
     }));
 app.mount("main#app");
