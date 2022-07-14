@@ -3,6 +3,8 @@ import {createRouter, createWebHashHistory} from 'vue-router';
 import {createStore} from 'vuex';
 import Main from "./Main.vue";
 
+process.NODE_ENV = 'development';
+
 export const app = createApp(Main)
     .use(createRouter({
         history: createWebHashHistory(),
