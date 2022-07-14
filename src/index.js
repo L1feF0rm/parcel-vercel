@@ -1,16 +1,21 @@
 import {createApp} from 'vue';
 import {createRouter, createWebHashHistory} from 'vue-router';
 import {createStore} from 'vuex';
+
 import Main from "./Main.vue";
 
 export const app = createApp(Main)
     .use(createRouter({
         history: createWebHashHistory(),
         routes: [{
-            path: '/user/:id(\\d+)?',
-            component: {
-                template: '<span>{{ $route.params.id }}</span>'
-            }
+            path: '/',
+            component: Main,
+            children: [{
+                path: '/user/:id(\\d+)?',
+                component: {
+                    template: '<span>{{ $route.params.id }}</span>'
+                }
+            }]
         }, {
             path: '/(.*)',
             component: {
@@ -32,9 +37,4 @@ export const app = createApp(Main)
         }
     }));
 
-app.config.devtools = true;
-
-const main = app.mount("main#app");
-
-console.log('app', app);
-console.log('main', main);
+app.mount("main#app");
