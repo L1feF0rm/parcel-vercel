@@ -1,9 +1,9 @@
 import {createApp} from 'vue';
 import {createRouter, createWebHashHistory} from 'vue-router';
 import {createStore} from 'vuex';
-import App from "./App.vue";
+import Main from "./Main.vue";
 
-const app = createApp(App)
+export const app = createApp(Main)
     .use(createRouter({
         history: createWebHashHistory(),
         routes: [{
@@ -32,8 +32,6 @@ const app = createApp(App)
         }
     }));
 const main = app.mount("main#app");
-
-
 
 console.log('app', app);
 console.log('main', main);
