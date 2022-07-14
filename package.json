@@ -8,7 +8,10 @@
   },
   "devDependencies": {
     "parcel": "latest",
+    "pinia": "latest",
     "vue": "latest",
+    "vue-router": "latest",
+    "vuex": "latest",
     "@parcel/transformer-sass": "latest",
     "@parcel/transformer-vue": "latest"
   }
