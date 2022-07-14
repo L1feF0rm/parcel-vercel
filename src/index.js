@@ -31,10 +31,9 @@ const app = createApp(App)
             }
         }
     }));
-app.mount("main#app");
+const main = app.mount("main#app");
 
 
 
-console.log('createRouter', createRouter);
-console.log('createWebHashHistory', createWebHashHistory);
-console.log('createStore', createStore);
+console.log('app', app);
+console.log('main', main);
