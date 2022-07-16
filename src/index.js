@@ -2,15 +2,10 @@ import {createApp, createBlock, openBlock, resolveComponent} from 'vue';
 import {createRouter, createWebHashHistory} from 'vue-router';
 import {createStore} from 'vuex';
 
-import Main from "./Main.vue";
+import Main from './App.vue';
+import Main from './Main.vue';
 
-const Root = {
-    render() {
-        return (openBlock(), createBlock(resolveComponent('router-view')));
-    }
-};
-
-export const app = createApp(Root)
+export const app = createApp(App)
     .use(createRouter({
         history: createWebHashHistory(),
         routes: [{
@@ -43,4 +38,4 @@ export const app = createApp(Root)
         }
     }));
 
-app.mount("main#app");
+app.mount('main#app');
