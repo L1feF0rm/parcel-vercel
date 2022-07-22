@@ -5,9 +5,9 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "build": "NODE_ENV=development npm run development",
+    "build": "npm run development",
     "dev": "parcel watch --no-hmr --watch-for-stdin",
-    "development": "parcel build --no-optimize",
+    "development": "NODE_ENV=development parcel build --no-optimize",
     "production": "parcel build"
   },
   "devDependencies": {
