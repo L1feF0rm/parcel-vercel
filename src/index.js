@@ -2,7 +2,7 @@ import {createApp, createBlock, openBlock, resolveComponent} from 'vue';
 import {createRouter, createWebHashHistory} from 'vue-router';
 import {createStore} from 'vuex';
 
-import Main from './App.vue';
+import App from './App.vue';
 import Main from './Main.vue';
 
 export const worker = new Worker(new URL('worker.js', import.meta.url), {type: 'module'});
