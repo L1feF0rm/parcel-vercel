@@ -10,8 +10,7 @@
         return process.env.NODE_ENV;
       },
       version() {
-        return '3.2.21';
-        // return this.appContext.app.version;
+        return this.$.appContext.app.version;
       }
     },
     created() {
