@@ -1,5 +1,5 @@
 <template>
-  <div>Hello {{ name }} {{ appContext.app.version }} in {{ env }}!</div>
+  <div>Hello {{ name }} in {{ env }}!</div>
   <router-view></router-view>
 </template>
 
