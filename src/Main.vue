@@ -1,20 +1,19 @@
 <template>
-  <div>Vue {{ version }} in {{ env }}!</div>
+  <div v-text="info"></div>
   <router-view></router-view>
 </template>
 
 <script>
   export default {
     computed: {
-      env() {
-        return process.env.NODE_ENV;
-      },
-      version() {
-        return this.$.appContext.app.version;
+      info() {
+        return `Vue ${this.$.appContext.app.version} in ${process.env.NODE_ENV}`;
       }
     },
     created() {
       console.log('this', this);
+      console.log('this.$', this.$);
+      console.log('this.$.app', this.$.app);
     }
   };
 </script>
