@@ -1,3 +1,7 @@
-console.log('this', this);
-console.log('self', self);
-console.log('globalThis', globalThis);
+addEventListener('message', function(event) {
+    switch (event.data) {
+        default:
+            postMessage('default');
+    }
+    console.log('event', event);
+});
