@@ -15,7 +15,7 @@ export const app = createApp(App)
             path: '/',
             component: Main,
             children: [{
-                path: '/user/:id(\\d+)?',
+                path: '/user/:id(\\d+)*',
                 component: User
             }]
         }, {

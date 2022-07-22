@@ -1,8 +1,9 @@
 {
   "name": "@kamen/parcel-vercel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "build": "NODE_ENV=development npm run development",
     "dev": "parcel watch --no-hmr --watch-for-stdin",
