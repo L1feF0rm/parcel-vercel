@@ -5,11 +5,7 @@ import {createStore} from 'vuex';
 import Main from './App.vue';
 import Main from './Main.vue';
 
-console.log('url', new URL('worker.js', import.meta.url));
-console.log('import.meta.url', import.meta.url);
-console.log('import.meta', import.meta);
-
-// export const worker = new Worker(new URL('worker.js', import.meta.url), {type: 'module'});
+export const worker = new Worker(new URL('worker.js', import.meta.url), {type: 'module'});
 
 export const app = createApp(App)
     .use(createRouter({
