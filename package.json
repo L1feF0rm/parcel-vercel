@@ -5,7 +5,8 @@
   "source": "src/index.html",
   "scripts": {
     "build": "NODE_ENV=development npm run development",
-    "development": "parcel watch --watch-for-stdin",
+    "dev": "parcel watch --no-hmr --watch-for-stdin",
+    "development": "parcel build --no-optimize",
     "production": "parcel build"
   },
   "devDependencies": {
