@@ -1,15 +1,17 @@
 <template>
-  <div>Hello {{ name }} in {{ env }}!</div>
+  <div>Vue {{ version }} in {{ env }}!</div>
   <router-view></router-view>
 </template>
 
 <script>
   export default {
-    data() {
-      return {
-        name: "Vue",
-        env: process.env.NODE_ENV
-      };
+    computed: {
+      env() {
+        return process.env.NODE_ENV;
+      },
+      version() {
+        return this.appContext.app.version;
+      }
     }
   };
 </script>
