@@ -1,6 +1,6 @@
 <template>
   <div>Hello {{ name }} in {{ env }}!</div>
-  <router-view><router-view>
+  <router-view></router-view>
 </template>
 
 <script>
