@@ -13,7 +13,6 @@
     created() {
       console.log('this', this);
       console.log('this.$', this.$);
-      console.log('this.$.app', this.$.app);
     }
   };
 </script>
